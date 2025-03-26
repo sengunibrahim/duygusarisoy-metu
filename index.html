@@ -5,62 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duygu Sarısoy - Akademik Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <img src="profil.jpg" alt="Duygu Sarısoy" class="profile-img">
-            <h2>Duygu Sarısoy</h2>
-            <p>duyguo@metu.edu.tr</p>
-            <p>Tel: +90 312 210 7545</p>
-            <p>Orta Doğu Teknik Üniversitesi</p>
-            <a href="cv.pdf" class="cv-button" target="_blank">📥 CV İndir</a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="research.html">Araştırma</a></li>
-                    <li><a href="publications.html">Yayınlar</a></li>
-                    <li><a href="collaborations.html">İşbirlikleri</a></li>
-                    <li><a href="cv.html">Özgeçmiş</a></li>
-                </ul>
-            </nav>
+    <header class="hero">
+        <div class="hero-content fade-in">
+            <img src="profil.jpg" alt="Duygu Sarısoy" class="profile-pic shadow">
+            <h1>Duygu Sarısoy</h1>
+            <p>Academician | Linguist | Cognitive Scientist</p>
+            <a href="cv.pdf" class="cta-button pulse" target="_blank">📥 Download CV</a>
         </div>
-        <div class="content">
-            <h1>Dr. Duygu Sarısoy</h1>
-            <p>I am interested in the question of how children learn, represent, and understand language. Using real-time methodologies, I investigate the moment-by-moment interpretation of language in children and adults to understand how our language processing mechanism develops from childhood into adulthood. I am also interested in how cognitive or social status (e.g., having an impairment or having a social disadvantage) might impact language processing and other cognitive abilities (e.g., memory, inhibition, prediction). Currently, I am collaborating with Hugh Rabagliati of the University of Edinburgh on language and cognitive development in Syrian refugee children, Umut Özge of METU Cognitive Science on semantic processing in Turkish, and with Joshua Hartshorne of Boston College and Jesse Snedeker of Harvard University on implicit causality and anaphora resolution in Turkish.</p>
+    </header>
 
-            <h2>Araştırma Alanları</h2>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#collaborations">Collaborations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="card fade-in">
+            <h2>About Me</h2>
+            <p>Duygu Sarısoy holds a Ph.D. in English Language Teaching, an M.Sc. in Cognitive Science, and a B.A. in Foreign Language Education from Middle East Technical University (METU). Her research focuses on psycholinguistics, child language development, and language processing mechanisms. She explores how language is learned and processed in real time, particularly investigating the language acquisition process in children through experimental methodologies. Throughout her academic career, she has collaborated with leading national and international scholars, contributing to impactful interdisciplinary research projects.</p>
+        </section>
+
+        <section id="education" class="card fade-in">
+            <h2>Education</h2>
             <ul>
-                <li>Çocuk Dil Edinimi</li>
-                <li>Deneysel Dilbilim</li>
-                <li>Psikolinguistik</li>
-                <li>Göz-izleme Deneyleri</li>
-                <li>Dil ve Bilişsel Gelişim</li>
+                <li><strong>Doctorate:</strong> Middle East Technical University, English Language Teaching</li>
+                <li><strong>Master's:</strong> Middle East Technical University, Cognitive Science</li>
+                <li><strong>Bachelor's:</strong> Middle East Technical University, Foreign Language Education</li>
             </ul>
+        </section>
 
-            <h2>Yayınlar</h2>
-            <p>Detaylı yayın listesi için <a href="publications.html">buraya tıklayın</a>.</p>
+        <section id="research" class="card fade-in">
+            <h2>Research Areas</h2>
+            <ul class="icon-list">
+                <li>🧩 Psycholinguistics</li>
+                <li>🧪 Child Language Development</li>
+                <li>🗣️ Language Processing Mechanisms</li>
+            </ul>
+        </section>
 
-            <h2>İşbirlikleri</h2>
+        <section id="publications" class="card fade-in">
+            <h2>Selected Publications</h2>
+            <p>Find the full list of publications <a href="publications.html">here</a>.</p>
+        </section>
+
+        <section id="collaborations" class="card fade-in">
+            <h2>Collaborators</h2>
             <ul>
                 <li>Hugh Rabagliati (University of Edinburgh)</li>
                 <li>Umut Özge (METU Cognitive Science)</li>
                 <li>Joshua Hartshorne (Boston College)</li>
                 <li>Jesse Snedeker (Harvard University)</li>
                 <li>Aylin Küntay (Koç University)</li>
-                <li>Pia Knoeferle (Humboldt University)</li>
-                <li>Theo Marinis (University of Reading)</li>
-                <li>Deniz Zeyrek (METU Cognitive Science)</li>
-                <li>Napoleon Katsos (University of Cambridge)</li>
-                <li>Klaus von Heusinger (University of Cologne)</li>
             </ul>
+        </section>
 
-            <h2>İletişim</h2>
-            <p>e-posta: duyguo@metu.edu.tr</p>
-            <p>Telefon: +90 312 210 7545</p>
-            <p>Adres: ODTÜ, Dilbilim Bölümü, Ankara, Türkiye</p>
-        </div>
-    </div>
+        <section id="contact" class="card fade-in">
+            <h2>Contact Information</h2>
+            <p>Email: duyguo@metu.edu.tr</p>
+            <p>Phone: +90 312 210 7545</p>
+            <p>Address: Middle East Technical University, Linguistics Department, Ankara, Turkey</p>
+        </section>
+    </main>
+
+    <footer class="fade-in">
+        <p>© 2024 Duygu Sarısoy | Designed with ❤️ | Last updated: March 2024</p>
+    </footer>
 </body>
 </html>
