@@ -2,83 +2,55 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duygu Sarısoy - Akademik Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Duygu Özge Sarısoy | CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin: auto;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    a.button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content fade-in">
-            <img src="profil.jpg" alt="Duygu Sarısoy" class="profile-pic shadow">
-            <h1>Duygu Sarısoy</h1>
-            <p>Academician | Linguist | Cognitive Scientist</p>
-            <a href="cv.pdf" class="cta-button pulse" target="_blank">📥 Download CV</a>
-        </div>
-    </header>
+  <div class="container">
+    <h1>Duygu Özge Sarısoy</h1>
+    <p>Aşağıda CV'yi görebilir veya indirebilirsiniz:</p>
+    
+    <!-- PDF Sayfa içinde görüntüleniyor -->
+    <iframe src="CV-Turkce-DuyguOzge.pdf"></iframe>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#collaborations">Collaborations</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="container">
-        <section id="about" class="card fade-in">
-            <h2>About Me</h2>
-            <p>Duygu Sarısoy holds a Ph.D. in English Language Teaching, an M.Sc. in Cognitive Science, and a B.A. in Foreign Language Education from Middle East Technical University (METU). Her research focuses on psycholinguistics, child language development, and language processing mechanisms. She explores how language is learned and processed in real time, particularly investigating the language acquisition process in children through experimental methodologies. Throughout her academic career, she has collaborated with renowned national and international scholars, contributing to impactful and interdisciplinary research projects.</p>
-        </section>
-
-        <section id="education" class="card fade-in">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Doctorate:</strong> Middle East Technical University, English Language Teaching</li>
-                <li><strong>Master's:</strong> Middle East Technical University, Cognitive Science</li>
-                <li><strong>Bachelor's:</strong> Middle East Technical University, Foreign Language Education</li>
-            </ul>
-        </section>
-
-        <section id="research" class="card fade-in">
-            <h2>Research Areas</h2>
-            <ul class="icon-list">
-                <li>🧩 Psycholinguistics</li>
-                <li>🧪 Child Language Development</li>
-                <li>🗣️ Language Processing Mechanisms</li>
-            </ul>
-        </section>
-
-        <section id="publications" class="card fade-in">
-            <h2>Selected Publications</h2>
-            <p>Find the full list of publications <a href="publications.html">here</a>.</p>
-        </section>
-
-        <section id="collaborations" class="card fade-in">
-            <h2>Collaborators</h2>
-            <ul>
-                <li>Hugh Rabagliati (University of Edinburgh)</li>
-                <li>Umut Özge (METU Cognitive Science)</li>
-                <li>Joshua Hartshorne (Boston College)</li>
-                <li>Jesse Snedeker (Harvard University)</li>
-                <li>Aylin Küntay (Koç University)</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="card fade-in">
-            <h2>Contact Information</h2>
-            <p>Email: duyguo@metu.edu.tr</p>
-            <p>Phone: +90 312 210 7545</p>
-            <p>Address: Middle East Technical University, Linguistics Department, Ankara, Turkey</p>
-        </section>
-    </main>
-
-    <footer class="fade-in">
-        <p>© 2024 Duygu Sarısoy | Designed with ❤️ | Last updated: March 2024</p>
-    </footer>
+    <!-- İndirilebilir bağlantı -->
+    <a href="CV-Turkce-DuyguOzge.pdf" class="button" download>CV'yi İndir (PDF)</a>
+  </div>
 </body>
 </html>
