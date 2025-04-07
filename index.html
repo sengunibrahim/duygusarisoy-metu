@@ -1,120 +1,133 @@
 
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duygu Özge Sarısoy | Akademik Profil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duygu Ozge Sarisoy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
-      line-height: 1.6;
+      background-color: #ffffff;
+      color: #111827;
     }
     header {
-      background-color: #343a40;
-      color: white;
-      padding: 40px 20px;
+      background: #f3f4f6;
+      border-bottom: 1px solid #e5e7eb;
       text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #e5e7eb;
+      margin-bottom: 20px;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: #1f2937;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #4b5563;
     }
     nav {
-      background-color: #495057;
       display: flex;
       justify-content: center;
       gap: 30px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
       padding: 15px 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
     }
     nav a {
-      color: white;
-      text-decoration: none;
+      color: #1f2937;
       font-weight: 600;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.2s;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #f3f4f6;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    .card {
-      background-color: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+    section {
+      margin-bottom: 60px;
     }
-    .card h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #007bff;
+    section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+      color: #111827;
     }
-    .btn {
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #374151;
+    }
+    .buttons a {
       display: inline-block;
-      padding: 12px 24px;
-      background-color: #007bff;
+      margin: 20px 10px 0 0;
+      padding: 12px 20px;
+      background-color: #2563eb;
       color: white;
-      text-decoration: none;
       border-radius: 6px;
-      margin-top: 15px;
+      text-decoration: none;
+      font-weight: 500;
       transition: background-color 0.3s ease;
     }
-    .btn:hover {
-      background-color: #0056b3;
+    .buttons a:hover {
+      background-color: #1d4ed8;
     }
     footer {
       text-align: center;
-      padding: 30px 0;
-      color: #6c757d;
+      padding: 40px 0;
+      background-color: #f9fafb;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="duygu.jpg" alt="Duygu Özge Sarısoy" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid white; margin-bottom: 20px;">
-    <h1>Duygu Özge Sarısoy</h1>
-    <p>Doçent Doktor | Dilbilimci | Akademisyen</p>
+    <img src="duygu.jpg" alt="Duygu Ozge Sarisoy">
+    <h1>Duygu Ozge Sarisoy</h1>
+    <p>Associate Professor | Linguist | Researcher</p>
   </header>
 
   <nav>
-    <a href="#hakkinda">Hakkında</a>
-    <a href="#arastirma">Araştırma Alanları</a>
-    <a href="#yayinlar">Yayınlar</a>
-    <a href="CV-Turkce-DuyguOzge.pdf" target="_blank">CV</a>
+    <a href="#about">About</a>
+    <a href="duygu_cv_tr.pdf" target="_blank">CV (TR)</a>
+    <a href="duygu_cv_en.pdf" target="_blank">CV (EN)</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="container">
-    <div class="card" id="hakkinda">
-      <h2>Hakkında</h2>
-      <p>Duygu Özge Sarısoy, dilbilim ve psikodilbilim alanlarında uzmanlaşılmış bir akademisyendir. ODTÜ Yabancı Diller Eğitimi Bölümü'nde doçent olarak görev yapmaktadır ve Dil ve Bilişsel Gelişim Laboratuvarı'nda baş araştırmacıdır.</p>
-    </div>
-
-    <div class="card" id="arastirma">
-      <h2>Araştırma Alanları</h2>
-      <ul>
-        <li>Dil ve Bilişsel Gelişim</li>
-        <li>Psikodilbilim</li>
-        <li>Anlamsal ve Edimsel Dil İşleme</li>
-        <li>Çocuklarda Dil Edinimi</li>
-      </ul>
-    </div>
-
-    <div class="card" id="yayinlar">
-      <h2>Seçilmiş Yayınlar</h2>
-      <p>Özge, D., Kornfilt, J., Maquate, K., Küntay, A. C., & Snedeker, J. (2022). German-speaking children use sentence-initial case marking for predictive language processing at age four. <em>Cognition</em>.</p>
-      <p>Yeter, Ö., Rabagliati, H., & Özge, D. (2022). Threat of war on cognitive development of refugee children. <em>East European Journal of Psycholinguistics</em>.</p>
-    </div>
+    <section id="about">
+      <h2>Research Interests</h2>
+      <p>
+        I am interested in how children learn, represent, and understand language. Using real-time methodologies, I investigate the moment-by-moment interpretation of language in children and adults to understand how our language processing mechanism develops from childhood into adulthood. I am also interested in how cognitive or social status (e.g., having an impairment or social disadvantage) might impact language processing and other cognitive abilities (e.g., memory, inhibition, prediction).
+        I currently collaborate with Hugh Rabagliati (University of Edinburgh), Umut Özge (METU), Joshua Hartshorne (Boston College), and Jesse Snedeker (Harvard University).
+      </p>
+      <div class="buttons">
+        <a href="duygu_cv_tr.pdf" target="_blank">Download CV (TR)</a>
+        <a href="duygu_cv_en.pdf" target="_blank">Download CV (EN)</a>
+      </div>
+    </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 Duygu Özge Sarısoy. Tüm hakları saklıdır.</p>
+    <p>&copy; 2025 Duygu Ozge Sarisoy. All rights reserved.</p>
   </footer>
 </body>
 </html>
