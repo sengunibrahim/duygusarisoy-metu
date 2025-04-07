@@ -4,42 +4,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Duygu Ozge Sarisoy | CV</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Duygu Özge Sarısoy | Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
-      color: #1f2937;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background: linear-gradient(to bottom right, #f0fdfa, #e0f2fe);
       margin: 0;
-      text-align: center;
+      padding: 0;
+      color: #1f2937;
     }
-    h1 {
-      font-size: 2rem;
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .hero img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #10b981;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #1e40af;
       margin-bottom: 10px;
     }
-    a {
+    .hero p {
+      font-size: 1.1rem;
+      color: #047857;
+      margin-bottom: 30px;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons a {
       background-color: #2563eb;
       color: white;
       text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 6px;
-      font-weight: 500;
-      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
     }
-    a:hover {
-      background-color: #1d4ed8;
+    .buttons a:hover {
+      background-color: #1e40af;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
-  <h1>Duygu Özge Sarısoy</h1>
-  <p><a href="duygu_cv.pdf" target="_blank">Download My CV (PDF)</a></p>
-  <p><a href="contact.html">Contact</a></p>
+  <div class="hero">
+    <img src="profile.jpg" alt="Duygu Özge Sarısoy">
+    <h1>Duygu Özge Sarısoy</h1>
+    <p>Associate Professor · Linguist · Researcher</p>
+    <div class="buttons">
+      <a href="duygu_cv.pdf" target="_blank">Download CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Duygu Özge Sarısoy. All rights reserved.
+  </footer>
 </body>
 </html>
